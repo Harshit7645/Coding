@@ -1,0 +1,2 @@
+BEGIN { print "\t \t \t \t \t Harshit Singh Pakhariya-210101048 \n \t \t \t \t \t \t INVENTORY REPORT \n Part No.\t \t Price\t \t Quantity On Hand\t \tReorder Point\t  \tMinimum Order\t \tOrder Amount\t \t \n" } {{if($3<$4)  print   $1"\t \t \t" $2 "\t \t \t "  $3"\t \t \t" $4" \t \t \t " $5" \t \t \t " $5+$4-$3 " \n" ; else print $1"\t \t \t" $2"\t \t \t " $3"\t \t \t" $4" \t \t \t " $5" \t \t \t 0 \n " }} END { print "\t \t \t \t \t \t END REPORT"} 
+
